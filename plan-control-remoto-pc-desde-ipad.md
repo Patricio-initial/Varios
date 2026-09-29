@@ -40,6 +40,30 @@ primero dentro de la red de casa y, opcionalmente, desde cualquier lugar de form
    *Configuración → Sistema → Inicio/apagado y suspensión → Suspender: Nunca* (conectada a corriente).
 4. Anotar: nombre de la PC (`hostname`), IP fija, usuario de Windows.
 
+### Si en casa hay dos redes (p. ej. "escritorio" y "hogar")
+
+Que el iPad llegue o no a la PC por IP local depende de cómo estén armadas las dos redes:
+
+| Cómo están armadas | ¿iPad en la otra red llega a la PC? |
+|---|---|
+| Dos Wi-Fi (SSID) del **mismo router**, misma subred (IPs `192.168.1.x` en ambos) | Sí, suele funcionar. |
+| Una de ellas es **red de invitados** o VLAN aislada | No, el router bloquea el tráfico entre ellas. |
+| **Dos routers**: el de escritorio conectado detrás del de hogar (doble NAT) | No desde la red de hogar hacia la PC; sí al revés. |
+| Dos conexiones a Internet distintas | No. |
+
+Cómo comprobarlo: comparar la IP del iPad (*Ajustes → Wi-Fi → (i)*) con la de la PC (`ipconfig`).
+Si los tres primeros números son distintos (p. ej. `192.168.1.x` y `192.168.0.x`), son subredes
+distintas y lo más probable es que la conexión directa no funcione.
+
+**Recomendación:** usar **Tailscale siempre** (Fase 4), incluso dentro de casa. Así da igual en
+qué Wi-Fi esté el iPad: una sola conexión guardada en Windows App con el nombre de Tailscale de la
+PC sirve en ambas redes y fuera de casa. Si hay camino directo, Tailscale conecta de forma
+directa por la red local, sin pasar por Internet y sin perder velocidad. No hace falta tocar el
+router ni unir las redes, y la red de escritorio sigue separada de la de hogar.
+
+Si prefieres no usar Tailscale en casa, conecta el iPad a la **misma Wi-Fi que la PC** cuando
+quieras controlarla.
+
 **Listo cuando:** la PC siempre tiene la misma IP tras reiniciar.
 
 ---
@@ -107,7 +131,9 @@ En su lugar, usar una VPN privada:
    (*Machines → … → Disable key expiry*), así no pierde acceso a los 180 días.
 5. En Windows App, crear una segunda conexión usando la IP `100.x.y.z` de Tailscale
    o el nombre MagicDNS (p. ej. `mi-pc`) en vez de `192.168.1.50`.
-6. Opcional (endurecer): limitar la regla de firewall de RDP a la red de Tailscale:
+6. Opcional (endurecer): limitar la regla de firewall de RDP a la red local de la PC y a la de
+   Tailscale. Ajusta `192.168.1.0/24` a la subred de la PC. Un iPad en la otra red de casa
+   quedará bloqueado salvo que entre por Tailscale, y eso es lo que se busca.
 
    ```powershell
    Get-NetFirewallRule -DisplayGroup 'Escritorio remoto' |
