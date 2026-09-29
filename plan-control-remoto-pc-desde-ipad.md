@@ -123,6 +123,10 @@ En su lugar, usar una VPN privada:
 
 ### Opción recomendada: Tailscale (gratis para uso personal)
 
+> Atajo: `scripts/configurar-pc-tailscale-rdp.ps1` hace en la PC los pasos 2 y 6, además de la
+> Fase 2A (activar Escritorio Remoto) y quitar la suspensión. Ejecutar como administrador:
+> `powershell -ExecutionPolicy Bypass -File .\configurar-pc-tailscale-rdp.ps1 -SoloTailscale`
+
 1. Crear cuenta en Tailscale (idealmente con una cuenta que tenga **2FA** activado).
 2. Instalar Tailscale en la **PC** e iniciar sesión.
    - En la PC: *Preferencias → Run unattended* para que funcione sin sesión abierta.
