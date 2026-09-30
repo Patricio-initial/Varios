@@ -10,7 +10,7 @@
     5. Limita el firewall de RDP a la subred local y a Tailscale (100.64.0.0/10).
     6. Evita que la PC se suspenda mientras esta conectada a corriente.
 
-    Ejecutar en PowerShell como administrador:
+    Ejecutar en PowerShell (si no es administrador, el script pide permisos solo):
         powershell -ExecutionPolicy Bypass -File .\configurar-pc-tailscale-rdp.ps1
 
 .PARAMETER SoloTailscale
@@ -35,7 +35,17 @@ function Aviso($texto){ Write-Host "    AVISO: $texto" -ForegroundColor Yellow }
 # --- 0. Administrador -------------------------------------------------------
 $principal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 if (-not $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-    throw 'Ejecuta este script en PowerShell como administrador (clic derecho > Ejecutar como administrador).'
+    # Se vuelve a abrir en una ventana nueva como administrador (Windows pedira confirmacion).
+    Write-Host 'Solicitando permisos de administrador...' -ForegroundColor Yellow
+    $argumentos = @('-NoProfile', '-NoExit', '-ExecutionPolicy', 'Bypass', '-File', "`"$PSCommandPath`"")
+    foreach ($nombre in $PSBoundParameters.Keys) { $argumentos += "-$nombre" }
+    try {
+        Start-Process powershell -Verb RunAs -ArgumentList $argumentos
+    } catch {
+        throw 'Se necesitan permisos de administrador. Vuelve a ejecutar y pulsa "Si" en la ventana de Windows.'
+    }
+    Write-Host 'El script continua en la nueva ventana de administrador.' -ForegroundColor Yellow
+    return
 }
 
 # --- 1. Edicion de Windows --------------------------------------------------
