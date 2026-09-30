@@ -66,6 +66,16 @@ if (Test-Path $tailscaleExe) {
     Ok 'Tailscale instalado.'
 }
 
+# Tras una instalacion nueva el servicio puede tardar unos segundos en arrancar.
+for ($i = 0; $i -lt 30; $i++) {
+    $servicio = Get-Service -Name Tailscale -ErrorAction SilentlyContinue
+    if ($servicio -and $servicio.Status -eq 'Running') { break }
+    Start-Sleep -Seconds 1
+}
+if (-not $servicio -or $servicio.Status -ne 'Running') {
+    throw 'El servicio Tailscale no esta en ejecucion. Reinicia la PC y vuelve a ejecutar el script.'
+}
+
 # --- 3. Iniciar sesion en modo desatendido ----------------------------------
 Paso 'Conectando Tailscale (se abrira el navegador para iniciar sesion si hace falta)'
 & $tailscaleExe up --unattended
@@ -86,8 +96,12 @@ if ($puedeRdp) {
     # Grupo "Escritorio remoto" / "Remote Desktop", independiente del idioma de Windows.
     $grupoRdp = '@FirewallAPI.dll,-28752'
     $origen = if ($SoloTailscale) { @('100.64.0.0/10') } else { @('LocalSubnet', '100.64.0.0/10') }
-    Get-NetFirewallRule -Group $grupoRdp |
-        Set-NetFirewallRule -Enabled True -Profile Any -RemoteAddress $origen
+    $reglas = Get-NetFirewallRule -Group $grupoRdp
+    # Restringir el origen en todas las reglas del grupo, pero habilitar solo las de conexion
+    # normal (UserMode); la regla "Shadow" (observar sesiones ajenas) se deja como estaba.
+    $reglas | Set-NetFirewallRule -RemoteAddress $origen
+    $reglas | Where-Object Name -like 'RemoteDesktop-UserMode-*' |
+        Set-NetFirewallRule -Enabled True -Profile Any
     Ok ("RDP permitido solo desde: " + ($origen -join ', '))
 }
 
