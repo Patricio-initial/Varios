@@ -48,6 +48,19 @@ el lote junto (~41 m) el modelo no entra en la pantalla. Se usa uno a la vez.
 acomodar a lo que realmente hay instalado. Para cambiar medidas a mano, editar
 `generar-plano.py` y correr `python3 generar-plano.py`.
 
+## Ver qué hay conectado en la red
+
+Para saber qué luces, enchufes, aires y demás hay en casa y ubicarlos en el plano:
+
+```bash
+python3 escanear-red.py
+```
+
+Con la Mac en el Wi-Fi de casa, tarda alrededor de un minuto. Solo mira la red local
+(ping, ARP, Bonjour, UPnP y unos pocos puertos conocidos) y no cambia nada. Deja
+`red-casa.csv` (para abrir en Excel o Numbers) y `red-casa.json` (para pasarle a Claude),
+cada uno con una categoría sugerida por dispositivo. Esos archivos no se suben al repo.
+
 ## Conectar los dispositivos reales
 
 Clic derecho → **Edit Home… → Connections** y conectar Smart Life (QR con la app),
