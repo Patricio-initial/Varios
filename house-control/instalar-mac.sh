@@ -33,6 +33,11 @@ fi
 
 echo "==> Compilando (la primera vez tarda unos minutos)"
 cd "$DEST"
+# Los widgets de escritorio necesitan Xcode completo y xcodegen; sin eso se omiten.
+if ! command -v xcodegen >/dev/null 2>&1 || ! xcodebuild -version >/dev/null 2>&1; then
+  echo "    (sin Xcode completo / xcodegen: se compila sin los widgets de escritorio)"
+  export SKIP_WIDGETS=1
+fi
 ./scripts/build-app.sh
 
 echo "==> Abriendo la app: busca el icono de la casa en la barra de menú (arriba a la derecha)"
