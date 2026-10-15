@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "name": "Quincho y taller",
+  "wallHeight": 2.7,
+  "interiorWallHeight": 1.25,
+  "outdoorTemp": 28,
+  "camera": {
+    "azimuth": 34,
+    "elevation": 52
+  },
+  "rooms": [
+    {
+      "id": "quincho",
+      "name": "Quincho",
+      "rect": [
+        0.0,
+        7.8,
+        8.75,
+        4.45
+      ],
+      "floor": "stone"
+    },
+    {
+      "id": "banoq",
+      "name": "Baño quincho",
+      "rect": [
+        8.75,
+        7.8,
+        3.2,
+        2.8
+      ],
+      "floor": "tile"
+    },
+    {
+      "id": "cocinaq",
+      "name": "Parrilla",
+      "rect": [
+        8.75,
+        10.6,
+        3.2,
+        1.65
+      ],
+      "floor": "tile"
+    },
+    {
+      "id": "taller",
+      "name": "Taller",
+      "rect": [
+        17.05,
+        8.2,
+        4.5,
+        4.05
+      ],
+      "floor": "stone"
+    }
+  ],
+  "openings": [
+    {
+      "type": "window",
+      "from": [
+        0.3,
+        7.8
+      ],
+      "to": [
+        8.5,
+        7.8
+      ],
+      "sill": 0.05,
+      "head": 2.3
+    },
+    {
+      "type": "window",
+      "from": [
+        0.0,
+        8.1
+      ],
+      "to": [
+        0.0,
+        12.0
+      ],
+      "sill": 0.05,
+      "head": 2.3
+    },
+    {
+      "type": "door",
+      "from": [
+        9.2,
+        10.6
+      ],
+      "to": [
+        10.0,
+        10.6
+      ]
+    },
+    {
+      "type": "open",
+      "from": [
+        8.75,
+        10.9
+      ],
+      "to": [
+        8.75,
+        12.0
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        10.6,
+        12.25
+      ],
+      "to": [
+        11.5,
+        12.25
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        17.05,
+        10.5
+      ],
+      "to": [
+        17.05,
+        11.4
+      ]
+    },
+    {
+      "type": "window",
+      "from": [
+        17.6,
+        8.2
+      ],
+      "to": [
+        21.0,
+        8.2
+      ],
+      "sill": 1.0,
+      "head": 2.1
+    }
+  ],
+  "furniture": [
+    {
+      "type": "diningSet",
+      "pos": [
+        4.3,
+        10.05
+      ],
+      "width": 3.0,
+      "chairs": 8
+    },
+    {
+      "type": "sofa",
+      "pos": [
+        1.1,
+        11.75
+      ],
+      "rot": 180,
+      "width": 2.0,
+      "color": "#6f8f86"
+    },
+    {
+      "type": "island",
+      "pos": [
+        7.4,
+        9.4
+      ],
+      "rot": 90,
+      "width": 2.2,
+      "stools": 3
+    },
+    {
+      "type": "kitchen",
+      "pos": [
+        7.6,
+        11.9
+      ],
+      "rot": 180,
+      "width": 2.0,
+      "upper": false
+    },
+    {
+      "type": "kitchen",
+      "pos": [
+        10.3,
+        11.9
+      ],
+      "rot": 180,
+      "width": 3.0,
+      "upper": false
+    },
+    {
+      "type": "toilet",
+      "pos": [
+        10.6,
+        8.3
+      ]
+    },
+    {
+      "type": "vanity",
+      "pos": [
+        11.6,
+        9.6
+      ],
+      "rot": -90,
+      "width": 0.7
+    },
+    {
+      "type": "desk",
+      "pos": [
+        17.65,
+        10.75
+      ],
+      "rot": 90,
+      "width": 1.5
+    },
+    {
+      "type": "bookshelf",
+      "pos": [
+        19.9,
+        11.95
+      ],
+      "rot": 180,
+      "width": 4.0,
+      "height": 1.9
+    },
+    {
+      "type": "desk",
+      "pos": [
+        21.1,
+        8.9
+      ],
+      "rot": -90,
+      "width": 0.9
+    },
+    {
+      "type": "rug",
+      "pos": [
+        3.95,
+        1.6
+      ],
+      "size": [
+        4.0,
+        3.0
+      ],
+      "color": "#c8b89a"
+    },
+    {
+      "type": "rug",
+      "pos": [
+        10.95,
+        1.6
+      ],
+      "size": [
+        10.0,
+        3.0
+      ],
+      "color": "#4fb6d6"
+    },
+    {
+      "type": "plant",
+      "pos": [
+        14.2,
+        13.5
+      ],
+      "height": 1.6
+    }
+  ],
+  "lights": [
+    {
+      "id": "quincho.mesa",
+      "name": "Mesa quincho",
+      "room": "quincho",
+      "type": "pendant",
+      "pos": [
+        4.3,
+        10.05
+      ],
+      "y": 1.9,
+      "capabilities": [
+        "brightness",
+        "temp"
+      ]
+    },
+    {
+      "id": "quincho.techo",
+      "name": "Quincho",
+      "room": "quincho",
+      "type": "spots",
+      "pos": [
+        2.2,
+        10.0
+      ],
+      "capabilities": [
+        "brightness"
+      ]
+    },
+    {
+      "id": "cocinaq.techo",
+      "name": "Parrilla",
+      "room": "cocinaq",
+      "type": "ceiling",
+      "pos": [
+        10.3,
+        11.4
+      ]
+    },
+    {
+      "id": "taller.techo",
+      "name": "Taller",
+      "room": "taller",
+      "type": "ceiling",
+      "pos": [
+        19.3,
+        10.2
+      ]
+    }
+  ],
+  "acs": [
+    {
+      "id": "quincho.ac",
+      "name": "Aire quincho",
+      "room": "quincho",
+      "wall": "south",
+      "pos": [
+        3.7,
+        12.25
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "quincho",
+      "name": "Quincho",
+      "icon": "heat",
+      "lights": {
+        "quincho.mesa": {
+          "on": true
+        },
+        "quincho.techo": {
+          "on": true
+        },
+        "cocinaq.techo": {
+          "on": true
+        }
+      }
+    },
+    {
+      "id": "apagar",
+      "name": "Todo apagado",
+      "icon": "power",
+      "lights": {
+        "*": {
+          "on": false
+        }
+      },
+      "acs": {
+        "*": {
+          "on": false
+        }
+      }
+    }
+  ]
+}

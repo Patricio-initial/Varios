@@ -27,12 +27,26 @@ bash instalar-mac.sh
 
 ## Cargar el plano de mi casa
 
-El plano es un JSON (`mi-casa.json` en esta carpeta, cuando esté listo).
+Armado a partir del plano "RODRIGUEZ - Ampliación vivienda 18-9-2024 - implantación" (ESC 1/200):
 
-- Clic derecho en el icono de la barra de menú → **Load Floor Plan…** → elegir `mi-casa.json`.
-- Para retocarlo: clic derecho → **Edit Home…** (arrastrar habitaciones, agregar puertas,
-  muebles, luces, aires) → **Save & apply**.
-- Se guarda en `~/Library/Application Support/HouseControl/plan.json`.
+| Archivo | Qué tiene |
+| --- | --- |
+| `mi-casa.json` | Casa principal: cocina, estar-comedor, guardado, entrada, 2 baños, pasillo, 2 dormitorios, estudio, dormitorio principal con vestidor y baño, lavadero |
+| `quincho-taller.json` | Quincho (con baño y parrilla), taller y la pileta con el solárium |
+
+Son dos archivos porque la vista 3D de la app está pensada para una casa: con todo
+el lote junto (~41 m) el modelo no entra en la pantalla. Se usa uno a la vez.
+
+1. Bajar `mi-casa.json` (y si se quiere `quincho-taller.json`) a la Mac.
+2. Clic derecho en el icono de la barra de menú → **Load Floor Plan…** → elegir el archivo.
+3. Para retocarlo: clic derecho → **Edit Home…** (arrastrar habitaciones, mover luces,
+   aires y muebles) → **Save & apply**. Se guarda en
+   `~/Library/Application Support/HouseControl/plan.json`.
+
+**Qué hay que revisar:** las medidas de las habitaciones salen del plano; los nombres
+"Estudio" y "Lavadero" y todas las luces, aires y escenas son una suposición, para
+acomodar a lo que realmente hay instalado. Para cambiar medidas a mano, editar
+`generar-plano.py` y correr `python3 generar-plano.py`.
 
 ## Conectar los dispositivos reales
 

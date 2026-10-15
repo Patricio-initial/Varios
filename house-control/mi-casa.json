@@ -1,0 +1,1067 @@
+{
+  "version": 1,
+  "name": "Casa La Esperanza",
+  "wallHeight": 2.7,
+  "interiorWallHeight": 1.25,
+  "outdoorTemp": 28,
+  "camera": {
+    "azimuth": 34,
+    "elevation": 52
+  },
+  "rooms": [
+    {
+      "id": "cocina",
+      "name": "Cocina",
+      "rect": [
+        0.0,
+        0.0,
+        2.85,
+        6.05
+      ],
+      "floor": "tile"
+    },
+    {
+      "id": "estar",
+      "name": "Estar-comedor",
+      "rect": [
+        2.85,
+        0.0,
+        5.3,
+        9.05
+      ],
+      "floor": "oak"
+    },
+    {
+      "id": "guardado",
+      "name": "Guardado",
+      "rect": [
+        0.0,
+        6.05,
+        2.85,
+        3.0
+      ],
+      "floor": "tile"
+    },
+    {
+      "id": "hall",
+      "name": "Entrada",
+      "rect": [
+        0.0,
+        9.05,
+        5.45,
+        2.9
+      ],
+      "floor": "stone"
+    },
+    {
+      "id": "bano1",
+      "name": "Baño 1",
+      "rect": [
+        0.0,
+        11.95,
+        2.4,
+        3.15
+      ],
+      "floor": "tile"
+    },
+    {
+      "id": "bano2",
+      "name": "Baño 2",
+      "rect": [
+        0.0,
+        15.1,
+        2.4,
+        3.55
+      ],
+      "floor": "tile"
+    },
+    {
+      "id": "pasillo",
+      "name": "Pasillo",
+      "rect": [
+        2.4,
+        11.95,
+        1.3,
+        10.2
+      ],
+      "floor": "oak"
+    },
+    {
+      "id": "dorm1",
+      "name": "Dormitorio 1",
+      "rect": [
+        3.7,
+        11.95,
+        4.45,
+        3.15
+      ],
+      "floor": "walnut"
+    },
+    {
+      "id": "dorm2",
+      "name": "Dormitorio 2",
+      "rect": [
+        3.7,
+        15.1,
+        4.45,
+        3.55
+      ],
+      "floor": "walnut"
+    },
+    {
+      "id": "estudio",
+      "name": "Estudio",
+      "rect": [
+        0.0,
+        18.65,
+        2.4,
+        3.5
+      ],
+      "floor": "oak"
+    },
+    {
+      "id": "principal",
+      "name": "Dormitorio ppal",
+      "rect": [
+        3.7,
+        18.65,
+        5.85,
+        3.5
+      ],
+      "floor": "walnut"
+    },
+    {
+      "id": "lavadero",
+      "name": "Lavadero",
+      "rect": [
+        0.0,
+        22.15,
+        3.7,
+        1.8
+      ],
+      "floor": "tile"
+    },
+    {
+      "id": "vestidor",
+      "name": "Vestidor",
+      "rect": [
+        3.7,
+        22.15,
+        2.1,
+        1.8
+      ],
+      "floor": "walnut"
+    },
+    {
+      "id": "banoppal",
+      "name": "Baño ppal",
+      "rect": [
+        5.8,
+        22.15,
+        3.75,
+        1.8
+      ],
+      "floor": "tile"
+    }
+  ],
+  "openings": [
+    {
+      "type": "open",
+      "from": [
+        2.85,
+        0.25
+      ],
+      "to": [
+        2.85,
+        5.85
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        1.7,
+        6.05
+      ],
+      "to": [
+        2.5,
+        6.05
+      ]
+    },
+    {
+      "type": "open",
+      "from": [
+        3.0,
+        9.05
+      ],
+      "to": [
+        5.3,
+        9.05
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        0.0,
+        9.45
+      ],
+      "to": [
+        0.0,
+        10.45
+      ]
+    },
+    {
+      "type": "window",
+      "from": [
+        5.45,
+        9.25
+      ],
+      "to": [
+        5.45,
+        11.75
+      ],
+      "sill": 0.05,
+      "head": 2.3
+    },
+    {
+      "type": "open",
+      "from": [
+        2.4,
+        11.95
+      ],
+      "to": [
+        3.7,
+        11.95
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        2.4,
+        12.35
+      ],
+      "to": [
+        2.4,
+        13.05
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        2.4,
+        17.75
+      ],
+      "to": [
+        2.4,
+        18.45
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        3.7,
+        14.15
+      ],
+      "to": [
+        3.7,
+        14.95
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        3.7,
+        15.25
+      ],
+      "to": [
+        3.7,
+        16.05
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        2.4,
+        19.15
+      ],
+      "to": [
+        2.4,
+        19.95
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        3.7,
+        19.35
+      ],
+      "to": [
+        3.7,
+        20.15
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        2.6,
+        22.15
+      ],
+      "to": [
+        3.5,
+        22.15
+      ]
+    },
+    {
+      "type": "open",
+      "from": [
+        3.9,
+        22.15
+      ],
+      "to": [
+        5.6,
+        22.15
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        6.0,
+        22.15
+      ],
+      "to": [
+        6.8,
+        22.15
+      ]
+    },
+    {
+      "type": "window",
+      "from": [
+        8.15,
+        0.25
+      ],
+      "to": [
+        8.15,
+        8.85
+      ],
+      "sill": 0.05,
+      "head": 2.4
+    },
+    {
+      "type": "window",
+      "from": [
+        3.3,
+        0.0
+      ],
+      "to": [
+        7.9,
+        0.0
+      ],
+      "sill": 0.05,
+      "head": 2.4
+    },
+    {
+      "type": "window",
+      "from": [
+        0.0,
+        0.25
+      ],
+      "to": [
+        0.0,
+        5.85
+      ],
+      "sill": 0.9,
+      "head": 2.1
+    },
+    {
+      "type": "window",
+      "from": [
+        8.15,
+        12.35
+      ],
+      "to": [
+        8.15,
+        14.75
+      ],
+      "sill": 0.05,
+      "head": 2.2
+    },
+    {
+      "type": "window",
+      "from": [
+        8.15,
+        15.45
+      ],
+      "to": [
+        8.15,
+        18.25
+      ],
+      "sill": 0.05,
+      "head": 2.2
+    },
+    {
+      "type": "window",
+      "from": [
+        9.55,
+        19.15
+      ],
+      "to": [
+        9.55,
+        21.75
+      ],
+      "sill": 0.05,
+      "head": 2.2
+    },
+    {
+      "type": "window",
+      "from": [
+        0.0,
+        18.95
+      ],
+      "to": [
+        0.0,
+        20.25
+      ]
+    },
+    {
+      "type": "window",
+      "from": [
+        0.0,
+        22.45
+      ],
+      "to": [
+        0.0,
+        23.65
+      ]
+    },
+    {
+      "type": "window",
+      "from": [
+        7.3,
+        23.95
+      ],
+      "to": [
+        8.9,
+        23.95
+      ],
+      "sill": 1.5,
+      "head": 2.0
+    }
+  ],
+  "furniture": [
+    {
+      "type": "diningSet",
+      "pos": [
+        5.6,
+        2.1
+      ],
+      "width": 3.0,
+      "chairs": 8
+    },
+    {
+      "type": "sofa",
+      "pos": [
+        5.9,
+        4.5
+      ],
+      "width": 2.4,
+      "color": "#8b93a7"
+    },
+    {
+      "type": "rug",
+      "pos": [
+        5.6,
+        6.15
+      ],
+      "size": [
+        3.4,
+        2.4
+      ],
+      "color": "#6f6a5e"
+    },
+    {
+      "type": "coffeeTable",
+      "pos": [
+        6.2,
+        6.35
+      ],
+      "width": 1.4
+    },
+    {
+      "type": "armchair",
+      "pos": [
+        4.1,
+        6.0
+      ],
+      "rot": 90,
+      "color": "#a07a5e"
+    },
+    {
+      "type": "armchair",
+      "pos": [
+        4.1,
+        7.1
+      ],
+      "rot": 90,
+      "color": "#a07a5e"
+    },
+    {
+      "type": "sideboard",
+      "pos": [
+        5.7,
+        8.75
+      ],
+      "rot": 180,
+      "width": 4.0
+    },
+    {
+      "type": "tv",
+      "pos": [
+        6.2,
+        8.7
+      ],
+      "rot": 180,
+      "width": 1.8
+    },
+    {
+      "type": "plant",
+      "pos": [
+        7.8,
+        0.35
+      ],
+      "height": 1.4
+    },
+    {
+      "type": "kitchen",
+      "pos": [
+        0.35,
+        3.05
+      ],
+      "rot": 90,
+      "width": 5.2
+    },
+    {
+      "type": "island",
+      "pos": [
+        2.4,
+        3.35
+      ],
+      "rot": 90,
+      "width": 3.4,
+      "stools": 0
+    },
+    {
+      "type": "fridge",
+      "pos": [
+        2.45,
+        5.6
+      ],
+      "rot": -90
+    },
+    {
+      "type": "vanity",
+      "pos": [
+        0.35,
+        13.05
+      ],
+      "rot": 90,
+      "width": 0.8
+    },
+    {
+      "type": "toilet",
+      "pos": [
+        2.0,
+        13.65
+      ],
+      "rot": -90
+    },
+    {
+      "type": "vanity",
+      "pos": [
+        0.35,
+        17.55
+      ],
+      "rot": 90,
+      "width": 0.8
+    },
+    {
+      "type": "toilet",
+      "pos": [
+        2.0,
+        16.45
+      ],
+      "rot": -90
+    },
+    {
+      "type": "bed",
+      "pos": [
+        6.7,
+        13.55
+      ],
+      "rot": -90,
+      "width": 1.4,
+      "color": "#7f9bb5"
+    },
+    {
+      "type": "wardrobe",
+      "pos": [
+        4.05,
+        13.15
+      ],
+      "rot": 90,
+      "width": 1.9
+    },
+    {
+      "type": "bed",
+      "pos": [
+        6.7,
+        16.85
+      ],
+      "rot": -90,
+      "width": 1.4,
+      "color": "#b98a7a"
+    },
+    {
+      "type": "wardrobe",
+      "pos": [
+        4.05,
+        17.35
+      ],
+      "rot": 90,
+      "width": 1.6
+    },
+    {
+      "type": "desk",
+      "pos": [
+        1.2,
+        19.15
+      ],
+      "width": 1.4
+    },
+    {
+      "type": "wardrobe",
+      "pos": [
+        1.2,
+        21.75
+      ],
+      "rot": 180,
+      "width": 2.2
+    },
+    {
+      "type": "bed",
+      "pos": [
+        8.0,
+        21.0
+      ],
+      "rot": 180,
+      "width": 1.8,
+      "color": "#9c8fb3"
+    },
+    {
+      "type": "nightstand",
+      "pos": [
+        6.75,
+        21.8
+      ],
+      "rot": 180
+    },
+    {
+      "type": "nightstand",
+      "pos": [
+        9.2,
+        21.8
+      ],
+      "rot": 180
+    },
+    {
+      "type": "wardrobe",
+      "pos": [
+        4.05,
+        20.55
+      ],
+      "rot": 90,
+      "width": 2.5
+    },
+    {
+      "type": "wardrobe",
+      "pos": [
+        4.75,
+        23.6
+      ],
+      "rot": 180,
+      "width": 1.9
+    },
+    {
+      "type": "bathtub",
+      "pos": [
+        8.6,
+        23.5
+      ],
+      "rot": 180
+    },
+    {
+      "type": "toilet",
+      "pos": [
+        7.1,
+        23.55
+      ],
+      "rot": 180
+    },
+    {
+      "type": "vanity",
+      "pos": [
+        6.2,
+        23.65
+      ],
+      "rot": 180,
+      "width": 0.7
+    },
+    {
+      "type": "kitchen",
+      "pos": [
+        1.6,
+        23.6
+      ],
+      "rot": 180,
+      "width": 3.0,
+      "upper": false
+    }
+  ],
+  "lights": [
+    {
+      "id": "estar.comedor",
+      "name": "Comedor",
+      "room": "estar",
+      "type": "pendant",
+      "pos": [
+        5.6,
+        2.1
+      ],
+      "y": 1.9,
+      "capabilities": [
+        "brightness",
+        "temp"
+      ]
+    },
+    {
+      "id": "estar.living",
+      "name": "Living",
+      "room": "estar",
+      "type": "spots",
+      "pos": [
+        5.9,
+        6.05
+      ],
+      "capabilities": [
+        "brightness",
+        "temp"
+      ]
+    },
+    {
+      "id": "estar.tv",
+      "name": "Tira TV",
+      "room": "estar",
+      "type": "strip",
+      "pos": [
+        6.2,
+        8.9
+      ],
+      "y": 0.4,
+      "length": 2.0,
+      "capabilities": [
+        "brightness",
+        "color"
+      ],
+      "color": "#7b5cff"
+    },
+    {
+      "id": "cocina.techo",
+      "name": "Cocina",
+      "room": "cocina",
+      "type": "spots",
+      "pos": [
+        1.4,
+        3.05
+      ],
+      "capabilities": [
+        "brightness"
+      ]
+    },
+    {
+      "id": "cocina.isla",
+      "name": "Isla",
+      "room": "cocina",
+      "type": "pendant",
+      "pos": [
+        2.4,
+        3.35
+      ],
+      "y": 1.8
+    },
+    {
+      "id": "hall.techo",
+      "name": "Entrada",
+      "room": "hall",
+      "type": "ceiling",
+      "pos": [
+        2.7,
+        10.5
+      ]
+    },
+    {
+      "id": "pasillo.techo",
+      "name": "Pasillo",
+      "room": "pasillo",
+      "type": "spots",
+      "pos": [
+        3.05,
+        17.05
+      ]
+    },
+    {
+      "id": "bano1.techo",
+      "name": "Baño 1",
+      "room": "bano1",
+      "type": "ceiling",
+      "pos": [
+        1.2,
+        13.55
+      ]
+    },
+    {
+      "id": "bano2.techo",
+      "name": "Baño 2",
+      "room": "bano2",
+      "type": "ceiling",
+      "pos": [
+        1.2,
+        16.85
+      ]
+    },
+    {
+      "id": "dorm1.techo",
+      "name": "Dormitorio 1",
+      "room": "dorm1",
+      "type": "ceiling",
+      "pos": [
+        5.9,
+        13.55
+      ],
+      "capabilities": [
+        "brightness",
+        "temp"
+      ]
+    },
+    {
+      "id": "dorm2.techo",
+      "name": "Dormitorio 2",
+      "room": "dorm2",
+      "type": "ceiling",
+      "pos": [
+        5.9,
+        16.85
+      ],
+      "capabilities": [
+        "brightness",
+        "temp"
+      ]
+    },
+    {
+      "id": "estudio.techo",
+      "name": "Estudio",
+      "room": "estudio",
+      "type": "ceiling",
+      "pos": [
+        1.2,
+        20.35
+      ],
+      "capabilities": [
+        "brightness",
+        "temp"
+      ]
+    },
+    {
+      "id": "ppal.techo",
+      "name": "Dormitorio",
+      "room": "principal",
+      "type": "ceiling",
+      "pos": [
+        6.6,
+        20.35
+      ],
+      "capabilities": [
+        "brightness",
+        "temp"
+      ]
+    },
+    {
+      "id": "ppal.mesa",
+      "name": "Velador",
+      "room": "principal",
+      "type": "table",
+      "pos": [
+        6.75,
+        21.8
+      ],
+      "y": 0.55
+    },
+    {
+      "id": "banoppal.techo",
+      "name": "Baño ppal",
+      "room": "banoppal",
+      "type": "spots",
+      "pos": [
+        7.7,
+        23.05
+      ]
+    },
+    {
+      "id": "lavadero.techo",
+      "name": "Lavadero",
+      "room": "lavadero",
+      "type": "ceiling",
+      "pos": [
+        1.8,
+        23.05
+      ]
+    }
+  ],
+  "acs": [
+    {
+      "id": "estar.ac",
+      "name": "Aire estar",
+      "room": "estar",
+      "wall": "south",
+      "pos": [
+        3.9,
+        9.05
+      ]
+    },
+    {
+      "id": "dorm1.ac",
+      "name": "Aire dorm. 1",
+      "room": "dorm1",
+      "wall": "north",
+      "pos": [
+        5.9,
+        11.95
+      ]
+    },
+    {
+      "id": "dorm2.ac",
+      "name": "Aire dorm. 2",
+      "room": "dorm2",
+      "wall": "south",
+      "pos": [
+        5.9,
+        18.65
+      ]
+    },
+    {
+      "id": "ppal.ac",
+      "name": "Aire dorm. ppal",
+      "room": "principal",
+      "wall": "north",
+      "pos": [
+        6.6,
+        18.65
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "llegar",
+      "name": "Llegar",
+      "icon": "home",
+      "lights": {
+        "*": {
+          "on": false
+        },
+        "hall.techo": {
+          "on": true
+        },
+        "estar.living": {
+          "on": true,
+          "brightness": 0.8
+        }
+      }
+    },
+    {
+      "id": "cena",
+      "name": "Cena",
+      "icon": "sofa",
+      "lights": {
+        "*": {
+          "on": false
+        },
+        "estar.comedor": {
+          "on": true,
+          "brightness": 0.7
+        },
+        "cocina.isla": {
+          "on": true
+        },
+        "estar.living": {
+          "on": true,
+          "brightness": 0.3
+        }
+      }
+    },
+    {
+      "id": "pelicula",
+      "name": "Película",
+      "icon": "film",
+      "lights": {
+        "*": {
+          "on": false
+        },
+        "estar.tv": {
+          "on": true,
+          "brightness": 0.9,
+          "color": "#6a4cff"
+        }
+      },
+      "acs": {
+        "estar.ac": {
+          "target": 23
+        }
+      }
+    },
+    {
+      "id": "noche",
+      "name": "Noche",
+      "icon": "moon",
+      "lights": {
+        "*": {
+          "on": false
+        },
+        "pasillo.techo": {
+          "on": true,
+          "brightness": 0.1
+        }
+      },
+      "acs": {
+        "*": {
+          "on": false
+        },
+        "ppal.ac": {
+          "on": true,
+          "target": 24
+        }
+      }
+    },
+    {
+      "id": "apagar",
+      "name": "Todo apagado",
+      "icon": "power",
+      "lights": {
+        "*": {
+          "on": false
+        }
+      },
+      "acs": {
+        "*": {
+          "on": false
+        }
+      }
+    }
+  ]
+}
