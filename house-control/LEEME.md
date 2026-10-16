@@ -53,9 +53,10 @@ el lote junto (~41 m) el modelo no entra en la pantalla. Se usa uno a la vez.
 | Puerta, Avestruz, Pasillo | Entrada | Smart Life |
 | Dispenser agua | Guardado / despensa | Smart Life (interruptor) |
 | Luz garage | Garage | Smart Life |
-| Aire living | Estar-comedor | "dining room air conditioner" |
+| Aire living | Estar-comedor | Google Home ("dining room air conditioner") → ver la app de la marca |
 | Aire cocina | Cocina | Broadlink → necesita Home Assistant |
 | Extractor | Quincho (`quincho-taller.json`) | Broadlink → necesita Home Assistant |
+| Arturito (calentador) | Taller (`quincho-taller.json`) | Smart Life (interruptor) |
 
 House Control solo maneja luces, enchufes y aires: las cerraduras, el alimentador del gato,
 el sensor de temperatura del quincho y el enchufe del estanque no aparecen.

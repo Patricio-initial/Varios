@@ -276,6 +276,17 @@
         10.3,
         11.4
       ]
+    },
+    {
+      "id": "taller.arturito",
+      "name": "Arturito (calentador)",
+      "room": "taller",
+      "type": "table",
+      "pos": [
+        20.9,
+        10.4
+      ],
+      "y": 0.3
     }
   ],
   "acs": [],

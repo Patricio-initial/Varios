@@ -132,7 +132,7 @@ FURNITURE = [
 # Luces reales. Hue enlaza luces sueltas (no grupos), así que cada grupo de 2 son 2 luces.
 #   hue:       Mesada (2) en cocina, Mesa (2) en comedor, Ikea (lámpara Symfonisk del living)
 #   smartlife: Puerta, Avestruz y Pasillo en la entrada, Dispenser (interruptor) en el
-#              guardado, Luz garage
+#              guardado, Luz garage, Arturito (interruptor del calentador del taller)
 #   broadlink: Extractor del quincho (enchufe; solo a través de Home Assistant)
 LIGHTS = [
     ("cocina.mesada1", "Mesada 1",    "cocina",   "spots",   (3.40, 2.80), {"capabilities": ["brightness", "temp"]}),
@@ -146,6 +146,7 @@ LIGHTS = [
     ("guardado.dispenser", "Dispenser agua", "guardado", "table", (4.60, 8.70), {"y": 0.9}),
     ("garage.luz",     "Luz garage",  "garage",   "ceiling", (-0.05, 23.10), {}),
     ("cocinaq.extractor", "Extractor", "cocinaq", "ceiling", (32.10, 24.40), {}),
+    ("taller.arturito", "Arturito (calentador)", "taller", "table", (42.70, 23.40), {"y": 0.3}),
 ]
 
 # (id, nombre, habitación, pared, posición sobre la pared)
