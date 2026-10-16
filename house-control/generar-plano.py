@@ -27,6 +27,7 @@ ROOMS = [
     ("lavadero",   "Lavadero",        2.70, 23.30,  6.40, 25.10, "tile"),
     ("vestidor",   "Vestidor",        6.40, 23.30,  8.50, 25.10, "walnut"),
     ("banoppal",   "Baño ppal",       8.50, 23.30, 12.25, 25.10, "tile"),
+    ("garage",     "Garage",         -2.80, 19.80,  2.70, 26.40, "stone"),
     # Quincho (Ampliación etapa 2)
     ("quincho",    "Quincho",        21.80, 20.80, 30.55, 25.25, "stone"),
     ("banoq",      "Baño quincho",   30.55, 20.80, 33.75, 23.60, "tile"),
@@ -59,8 +60,8 @@ OPENINGS = [
     ("window", (10.85, 13.50), (10.85, 15.90), {"sill": 0.05, "head": 2.2}),
     ("window", (10.85, 16.60), (10.85, 19.40), {"sill": 0.05, "head": 2.2}),
     ("window", (12.25, 20.30), (12.25, 22.90), {"sill": 0.05, "head": 2.2}),
-    ("window", (2.70, 20.10), (2.70, 21.40)),                                # estudio
-    ("window", (2.70, 23.60), (2.70, 24.80)),                                # lavadero
+    ("open",   (-2.50, 26.40), (2.40, 26.40)),                              # garage: frente abierto
+    ("door",   (1.00, 19.80), (1.90, 19.80)),                               # garage → patio lateral
     ("window", (10.00, 25.10), (11.60, 25.10), {"sill": 1.5, "head": 2.0}),  # baño ppal
     # Quincho
     ("window", (22.10, 20.80), (30.30, 20.80), {"sill": 0.05, "head": 2.3}), # paños corredizos
@@ -128,54 +129,53 @@ FURNITURE = [
     {"type": "plant",       "pos": (36.0, 26.5), "height": 1.6},   # durazno
 ]
 
+# Luces reales. Hue enlaza luces sueltas (no grupos), así que cada grupo de 2 son 2 luces.
+#   hue:       Mesada (2) en cocina, Mesa (2) en comedor, Ikea (lámpara Symfonisk del living)
+#   smartlife: Puerta, Avestruz y Pasillo en la entrada, Dispenser (interruptor) en el
+#              guardado, Luz garage
+#   broadlink: Extractor del quincho (enchufe; solo a través de Home Assistant)
 LIGHTS = [
-    ("estar.comedor", "Comedor",       "estar",     "pendant", (8.30, 3.25), {"y": 1.9, "capabilities": ["brightness", "temp"]}),
-    ("estar.living",  "Living",        "estar",     "spots",   (8.60, 7.20), {"capabilities": ["brightness", "temp"]}),
-    ("estar.tv",      "Tira TV",       "estar",     "strip",   (8.90, 10.05), {"y": 0.4, "length": 2.0, "capabilities": ["brightness", "color"], "color": "#7b5cff"}),
-    ("cocina.techo",  "Cocina",        "cocina",    "spots",   (4.10, 4.20), {"capabilities": ["brightness"]}),
-    ("cocina.isla",   "Isla",          "cocina",    "pendant", (5.10, 4.50), {"y": 1.8}),
-    ("hall.techo",    "Entrada",       "hall",      "ceiling", (5.40, 11.65), {}),
-    ("pasillo.techo", "Pasillo",       "pasillo",   "spots",   (5.75, 18.20), {}),
-    ("bano1.techo",   "Baño 1",        "bano1",     "ceiling", (3.90, 14.70), {}),
-    ("bano2.techo",   "Baño 2",        "bano2",     "ceiling", (3.90, 18.00), {}),
-    ("dorm1.techo",   "Dormitorio 1",  "dorm1",     "ceiling", (8.60, 14.70), {"capabilities": ["brightness", "temp"]}),
-    ("dorm2.techo",   "Dormitorio 2",  "dorm2",     "ceiling", (8.60, 18.00), {"capabilities": ["brightness", "temp"]}),
-    ("estudio.techo", "Estudio",       "estudio",   "ceiling", (3.90, 21.50), {"capabilities": ["brightness", "temp"]}),
-    ("ppal.techo",    "Dormitorio",    "principal", "ceiling", (9.30, 21.50), {"capabilities": ["brightness", "temp"]}),
-    ("ppal.mesa",     "Velador",       "principal", "table",   (9.45, 22.95), {"y": 0.55}),
-    ("banoppal.techo","Baño ppal",     "banoppal",  "spots",   (10.40, 24.20), {}),
-    ("lavadero.techo","Lavadero",      "lavadero",  "ceiling", (4.50, 24.20), {}),
-    ("quincho.mesa",  "Mesa quincho",  "quincho",   "pendant", (26.10, 23.05), {"y": 1.9, "capabilities": ["brightness", "temp"]}),
-    ("quincho.techo", "Quincho",       "quincho",   "spots",   (24.00, 23.00), {"capabilities": ["brightness"]}),
-    ("cocinaq.techo", "Parrilla",      "cocinaq",   "ceiling", (32.10, 24.40), {}),
-    ("taller.techo",  "Taller",        "taller",    "ceiling", (41.10, 23.20), {}),
+    ("cocina.mesada1", "Mesada 1",    "cocina",   "spots",   (3.40, 2.80), {"capabilities": ["brightness", "temp"]}),
+    ("cocina.mesada2", "Mesada 2",    "cocina",   "spots",   (3.40, 5.40), {"capabilities": ["brightness", "temp"]}),
+    ("estar.mesa1",    "Mesa 1",      "estar",    "pendant", (7.60, 3.25), {"y": 1.9, "capabilities": ["brightness", "temp"]}),
+    ("estar.mesa2",    "Mesa 2",      "estar",    "pendant", (9.00, 3.25), {"y": 1.9, "capabilities": ["brightness", "temp"]}),
+    ("estar.ikea",     "Ikea",        "estar",    "table",   (10.35, 5.60), {"y": 0.55, "capabilities": ["brightness", "temp", "color"]}),
+    ("hall.puerta",    "Puerta",      "hall",     "ceiling", (3.50, 11.10), {"capabilities": ["brightness"]}),
+    ("hall.avestruz",  "Avestruz",    "hall",     "floor",   (7.70, 10.70), {"capabilities": ["brightness"]}),
+    ("hall.pasillo",   "Pasillo",     "hall",     "spots",   (5.75, 12.60), {"capabilities": ["brightness"]}),
+    ("guardado.dispenser", "Dispenser agua", "guardado", "table", (4.60, 8.70), {"y": 0.9}),
+    ("garage.luz",     "Luz garage",  "garage",   "ceiling", (-0.05, 23.10), {}),
+    ("cocinaq.extractor", "Extractor", "cocinaq", "ceiling", (32.10, 24.40), {}),
 ]
 
 # (id, nombre, habitación, pared, posición sobre la pared)
 ACS = [
-    ("estar.ac",   "Aire estar",      "estar",     "south", (6.60, 10.20)),
-    ("dorm1.ac",   "Aire dorm. 1",    "dorm1",     "north", (8.60, 13.10)),
-    ("dorm2.ac",   "Aire dorm. 2",    "dorm2",     "south", (8.60, 19.80)),
-    ("ppal.ac",    "Aire dorm. ppal", "principal", "north", (9.30, 19.80)),
-    ("quincho.ac", "Aire quincho",    "quincho",   "south", (25.50, 25.25)),
+    ("estar.ac",   "Aire living",  "estar",  "south", (6.60, 10.20)),   # "dining room air conditioner"
+    ("cocina.ac",  "Aire cocina",  "cocina", "north", (4.10, 1.15)),    # por Broadlink
 ]
 
+# Escenas. No se usa "*" para apagar todo: el dispenser y el extractor no son luces.
+CASA = ["cocina.mesada1", "cocina.mesada2", "estar.mesa1", "estar.mesa2", "estar.ikea",
+        "hall.puerta", "hall.avestruz", "hall.pasillo", "garage.luz"]
+
+
+def lights(on=(), **levels):
+    """Todas las luces de CASA apagadas salvo las de `on` y las de `levels` (id → brillo)."""
+    out = {i: {"on": False} for i in CASA}
+    out.update({i: {"on": True} for i in on})
+    out.update({i.replace("__", "."): {"on": True, "brightness": b} for i, b in levels.items()})
+    return out
+
+
 SCENES = [
-    {"id": "llegar", "name": "Llegar", "icon": "home",
-     "lights": {"*": {"on": False}, "hall.techo": {"on": True}, "estar.living": {"on": True, "brightness": 0.8}}},
-    {"id": "cena", "name": "Cena", "icon": "sofa",
-     "lights": {"*": {"on": False}, "estar.comedor": {"on": True, "brightness": 0.7},
-                "cocina.isla": {"on": True}, "estar.living": {"on": True, "brightness": 0.3}}},
+    {"id": "llegar", "name": "Llegar", "icon": "door",
+     "lights": lights(on=["hall.puerta", "hall.avestruz", "hall.pasillo", "garage.luz"], estar__ikea=0.7)},
+    {"id": "cena", "name": "Cena", "icon": "table",
+     "lights": lights(estar__mesa1=0.7, estar__mesa2=0.7, cocina__mesada1=0.5, cocina__mesada2=0.5, estar__ikea=0.4)},
     {"id": "pelicula", "name": "Película", "icon": "film",
-     "lights": {"*": {"on": False}, "estar.tv": {"on": True, "brightness": 0.9, "color": "#6a4cff"}},
-     "acs": {"estar.ac": {"target": 23}}},
-    {"id": "quincho", "name": "Quincho", "icon": "heat",
-     "lights": {"quincho.mesa": {"on": True}, "quincho.techo": {"on": True}, "cocinaq.techo": {"on": True}}},
+     "lights": lights(estar__ikea=0.2), "acs": {"estar.ac": {"on": True, "target": 23}}},
     {"id": "noche", "name": "Noche", "icon": "moon",
-     "lights": {"*": {"on": False}, "pasillo.techo": {"on": True, "brightness": 0.1}},
-     "acs": {"*": {"on": False}, "ppal.ac": {"on": True, "target": 24}}},
-    {"id": "apagar", "name": "Todo apagado", "icon": "power",
-     "lights": {"*": {"on": False}}, "acs": {"*": {"on": False}}},
+     "lights": lights(), "acs": {"*": {"on": False}}},
 ]
 
 

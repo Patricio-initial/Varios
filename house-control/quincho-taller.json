@@ -268,97 +268,16 @@
   ],
   "lights": [
     {
-      "id": "quincho.mesa",
-      "name": "Mesa quincho",
-      "room": "quincho",
-      "type": "pendant",
-      "pos": [
-        4.3,
-        10.05
-      ],
-      "y": 1.9,
-      "capabilities": [
-        "brightness",
-        "temp"
-      ]
-    },
-    {
-      "id": "quincho.techo",
-      "name": "Quincho",
-      "room": "quincho",
-      "type": "spots",
-      "pos": [
-        2.2,
-        10.0
-      ],
-      "capabilities": [
-        "brightness"
-      ]
-    },
-    {
-      "id": "cocinaq.techo",
-      "name": "Parrilla",
+      "id": "cocinaq.extractor",
+      "name": "Extractor",
       "room": "cocinaq",
       "type": "ceiling",
       "pos": [
         10.3,
         11.4
       ]
-    },
-    {
-      "id": "taller.techo",
-      "name": "Taller",
-      "room": "taller",
-      "type": "ceiling",
-      "pos": [
-        19.3,
-        10.2
-      ]
     }
   ],
-  "acs": [
-    {
-      "id": "quincho.ac",
-      "name": "Aire quincho",
-      "room": "quincho",
-      "wall": "south",
-      "pos": [
-        3.7,
-        12.25
-      ]
-    }
-  ],
-  "scenes": [
-    {
-      "id": "quincho",
-      "name": "Quincho",
-      "icon": "heat",
-      "lights": {
-        "quincho.mesa": {
-          "on": true
-        },
-        "quincho.techo": {
-          "on": true
-        },
-        "cocinaq.techo": {
-          "on": true
-        }
-      }
-    },
-    {
-      "id": "apagar",
-      "name": "Todo apagado",
-      "icon": "power",
-      "lights": {
-        "*": {
-          "on": false
-        }
-      },
-      "acs": {
-        "*": {
-          "on": false
-        }
-      }
-    }
-  ]
+  "acs": [],
+  "scenes": []
 }

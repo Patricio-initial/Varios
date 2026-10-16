@@ -13,7 +13,7 @@
       "id": "cocina",
       "name": "Cocina",
       "rect": [
-        0.0,
+        5.5,
         0.0,
         2.85,
         6.05
@@ -24,7 +24,7 @@
       "id": "estar",
       "name": "Estar-comedor",
       "rect": [
-        2.85,
+        8.35,
         0.0,
         5.3,
         9.05
@@ -35,7 +35,7 @@
       "id": "guardado",
       "name": "Guardado",
       "rect": [
-        0.0,
+        5.5,
         6.05,
         2.85,
         3.0
@@ -46,7 +46,7 @@
       "id": "hall",
       "name": "Entrada",
       "rect": [
-        0.0,
+        5.5,
         9.05,
         5.45,
         2.9
@@ -57,7 +57,7 @@
       "id": "bano1",
       "name": "Baño 1",
       "rect": [
-        0.0,
+        5.5,
         11.95,
         2.4,
         3.15
@@ -68,7 +68,7 @@
       "id": "bano2",
       "name": "Baño 2",
       "rect": [
-        0.0,
+        5.5,
         15.1,
         2.4,
         3.55
@@ -79,7 +79,7 @@
       "id": "pasillo",
       "name": "Pasillo",
       "rect": [
-        2.4,
+        7.9,
         11.95,
         1.3,
         10.2
@@ -90,7 +90,7 @@
       "id": "dorm1",
       "name": "Dormitorio 1",
       "rect": [
-        3.7,
+        9.2,
         11.95,
         4.45,
         3.15
@@ -101,7 +101,7 @@
       "id": "dorm2",
       "name": "Dormitorio 2",
       "rect": [
-        3.7,
+        9.2,
         15.1,
         4.45,
         3.55
@@ -112,7 +112,7 @@
       "id": "estudio",
       "name": "Estudio",
       "rect": [
-        0.0,
+        5.5,
         18.65,
         2.4,
         3.5
@@ -123,7 +123,7 @@
       "id": "principal",
       "name": "Dormitorio ppal",
       "rect": [
-        3.7,
+        9.2,
         18.65,
         5.85,
         3.5
@@ -134,7 +134,7 @@
       "id": "lavadero",
       "name": "Lavadero",
       "rect": [
-        0.0,
+        5.5,
         22.15,
         3.7,
         1.8
@@ -145,7 +145,7 @@
       "id": "vestidor",
       "name": "Vestidor",
       "rect": [
-        3.7,
+        9.2,
         22.15,
         2.1,
         1.8
@@ -156,67 +156,78 @@
       "id": "banoppal",
       "name": "Baño ppal",
       "rect": [
-        5.8,
+        11.3,
         22.15,
         3.75,
         1.8
       ],
       "floor": "tile"
+    },
+    {
+      "id": "garage",
+      "name": "Garage",
+      "rect": [
+        0.0,
+        18.65,
+        5.5,
+        6.6
+      ],
+      "floor": "stone"
     }
   ],
   "openings": [
     {
       "type": "open",
       "from": [
-        2.85,
+        8.35,
         0.25
       ],
       "to": [
-        2.85,
+        8.35,
         5.85
       ]
     },
     {
       "type": "door",
       "from": [
-        1.7,
+        7.2,
         6.05
       ],
       "to": [
-        2.5,
+        8.0,
         6.05
       ]
     },
     {
       "type": "open",
       "from": [
-        3.0,
+        8.5,
         9.05
       ],
       "to": [
-        5.3,
+        10.8,
         9.05
       ]
     },
     {
       "type": "door",
       "from": [
-        0.0,
+        5.5,
         9.45
       ],
       "to": [
-        0.0,
+        5.5,
         10.45
       ]
     },
     {
       "type": "window",
       "from": [
-        5.45,
+        10.95,
         9.25
       ],
       "to": [
-        5.45,
+        10.95,
         11.75
       ],
       "sill": 0.05,
@@ -225,121 +236,121 @@
     {
       "type": "open",
       "from": [
-        2.4,
+        7.9,
         11.95
       ],
       "to": [
-        3.7,
+        9.2,
         11.95
       ]
     },
     {
       "type": "door",
       "from": [
-        2.4,
+        7.9,
         12.35
       ],
       "to": [
-        2.4,
+        7.9,
         13.05
       ]
     },
     {
       "type": "door",
       "from": [
-        2.4,
+        7.9,
         17.75
       ],
       "to": [
-        2.4,
+        7.9,
         18.45
       ]
     },
     {
       "type": "door",
       "from": [
-        3.7,
+        9.2,
         14.15
       ],
       "to": [
-        3.7,
+        9.2,
         14.95
       ]
     },
     {
       "type": "door",
       "from": [
-        3.7,
+        9.2,
         15.25
       ],
       "to": [
-        3.7,
+        9.2,
         16.05
       ]
     },
     {
       "type": "door",
       "from": [
-        2.4,
+        7.9,
         19.15
       ],
       "to": [
-        2.4,
+        7.9,
         19.95
       ]
     },
     {
       "type": "door",
       "from": [
-        3.7,
+        9.2,
         19.35
       ],
       "to": [
-        3.7,
+        9.2,
         20.15
       ]
     },
     {
       "type": "door",
       "from": [
-        2.6,
+        8.1,
         22.15
       ],
       "to": [
-        3.5,
+        9.0,
         22.15
       ]
     },
     {
       "type": "open",
       "from": [
-        3.9,
+        9.4,
         22.15
       ],
       "to": [
-        5.6,
+        11.1,
         22.15
       ]
     },
     {
       "type": "door",
       "from": [
-        6.0,
+        11.5,
         22.15
       ],
       "to": [
-        6.8,
+        12.3,
         22.15
       ]
     },
     {
       "type": "window",
       "from": [
-        8.15,
+        13.65,
         0.25
       ],
       "to": [
-        8.15,
+        13.65,
         8.85
       ],
       "sill": 0.05,
@@ -348,11 +359,11 @@
     {
       "type": "window",
       "from": [
-        3.3,
+        8.8,
         0.0
       ],
       "to": [
-        7.9,
+        13.4,
         0.0
       ],
       "sill": 0.05,
@@ -361,11 +372,11 @@
     {
       "type": "window",
       "from": [
-        0.0,
+        5.5,
         0.25
       ],
       "to": [
-        0.0,
+        5.5,
         5.85
       ],
       "sill": 0.9,
@@ -374,11 +385,11 @@
     {
       "type": "window",
       "from": [
-        8.15,
+        13.65,
         12.35
       ],
       "to": [
-        8.15,
+        13.65,
         14.75
       ],
       "sill": 0.05,
@@ -387,11 +398,11 @@
     {
       "type": "window",
       "from": [
-        8.15,
+        13.65,
         15.45
       ],
       "to": [
-        8.15,
+        13.65,
         18.25
       ],
       "sill": 0.05,
@@ -400,46 +411,46 @@
     {
       "type": "window",
       "from": [
-        9.55,
+        15.05,
         19.15
       ],
       "to": [
-        9.55,
+        15.05,
         21.75
       ],
       "sill": 0.05,
       "head": 2.2
     },
     {
-      "type": "window",
+      "type": "open",
       "from": [
-        0.0,
-        18.95
+        0.3,
+        25.25
       ],
       "to": [
-        0.0,
-        20.25
+        5.2,
+        25.25
+      ]
+    },
+    {
+      "type": "door",
+      "from": [
+        3.8,
+        18.65
+      ],
+      "to": [
+        4.7,
+        18.65
       ]
     },
     {
       "type": "window",
       "from": [
-        0.0,
-        22.45
-      ],
-      "to": [
-        0.0,
-        23.65
-      ]
-    },
-    {
-      "type": "window",
-      "from": [
-        7.3,
+        12.8,
         23.95
       ],
       "to": [
-        8.9,
+        14.4,
         23.95
       ],
       "sill": 1.5,
@@ -450,7 +461,7 @@
     {
       "type": "diningSet",
       "pos": [
-        5.6,
+        11.1,
         2.1
       ],
       "width": 3.0,
@@ -459,7 +470,7 @@
     {
       "type": "sofa",
       "pos": [
-        5.9,
+        11.4,
         4.5
       ],
       "width": 2.4,
@@ -468,7 +479,7 @@
     {
       "type": "rug",
       "pos": [
-        5.6,
+        11.1,
         6.15
       ],
       "size": [
@@ -480,7 +491,7 @@
     {
       "type": "coffeeTable",
       "pos": [
-        6.2,
+        11.7,
         6.35
       ],
       "width": 1.4
@@ -488,7 +499,7 @@
     {
       "type": "armchair",
       "pos": [
-        4.1,
+        9.6,
         6.0
       ],
       "rot": 90,
@@ -497,7 +508,7 @@
     {
       "type": "armchair",
       "pos": [
-        4.1,
+        9.6,
         7.1
       ],
       "rot": 90,
@@ -506,7 +517,7 @@
     {
       "type": "sideboard",
       "pos": [
-        5.7,
+        11.2,
         8.75
       ],
       "rot": 180,
@@ -515,7 +526,7 @@
     {
       "type": "tv",
       "pos": [
-        6.2,
+        11.7,
         8.7
       ],
       "rot": 180,
@@ -524,7 +535,7 @@
     {
       "type": "plant",
       "pos": [
-        7.8,
+        13.3,
         0.35
       ],
       "height": 1.4
@@ -532,7 +543,7 @@
     {
       "type": "kitchen",
       "pos": [
-        0.35,
+        5.85,
         3.05
       ],
       "rot": 90,
@@ -541,7 +552,7 @@
     {
       "type": "island",
       "pos": [
-        2.4,
+        7.9,
         3.35
       ],
       "rot": 90,
@@ -551,7 +562,7 @@
     {
       "type": "fridge",
       "pos": [
-        2.45,
+        7.95,
         5.6
       ],
       "rot": -90
@@ -559,7 +570,7 @@
     {
       "type": "vanity",
       "pos": [
-        0.35,
+        5.85,
         13.05
       ],
       "rot": 90,
@@ -568,7 +579,7 @@
     {
       "type": "toilet",
       "pos": [
-        2.0,
+        7.5,
         13.65
       ],
       "rot": -90
@@ -576,7 +587,7 @@
     {
       "type": "vanity",
       "pos": [
-        0.35,
+        5.85,
         17.55
       ],
       "rot": 90,
@@ -585,7 +596,7 @@
     {
       "type": "toilet",
       "pos": [
-        2.0,
+        7.5,
         16.45
       ],
       "rot": -90
@@ -593,7 +604,7 @@
     {
       "type": "bed",
       "pos": [
-        6.7,
+        12.2,
         13.55
       ],
       "rot": -90,
@@ -603,7 +614,7 @@
     {
       "type": "wardrobe",
       "pos": [
-        4.05,
+        9.55,
         13.15
       ],
       "rot": 90,
@@ -612,7 +623,7 @@
     {
       "type": "bed",
       "pos": [
-        6.7,
+        12.2,
         16.85
       ],
       "rot": -90,
@@ -622,7 +633,7 @@
     {
       "type": "wardrobe",
       "pos": [
-        4.05,
+        9.55,
         17.35
       ],
       "rot": 90,
@@ -631,7 +642,7 @@
     {
       "type": "desk",
       "pos": [
-        1.2,
+        6.7,
         19.15
       ],
       "width": 1.4
@@ -639,7 +650,7 @@
     {
       "type": "wardrobe",
       "pos": [
-        1.2,
+        6.7,
         21.75
       ],
       "rot": 180,
@@ -648,7 +659,7 @@
     {
       "type": "bed",
       "pos": [
-        8.0,
+        13.5,
         21.0
       ],
       "rot": 180,
@@ -658,7 +669,7 @@
     {
       "type": "nightstand",
       "pos": [
-        6.75,
+        12.25,
         21.8
       ],
       "rot": 180
@@ -666,7 +677,7 @@
     {
       "type": "nightstand",
       "pos": [
-        9.2,
+        14.7,
         21.8
       ],
       "rot": 180
@@ -674,7 +685,7 @@
     {
       "type": "wardrobe",
       "pos": [
-        4.05,
+        9.55,
         20.55
       ],
       "rot": 90,
@@ -683,7 +694,7 @@
     {
       "type": "wardrobe",
       "pos": [
-        4.75,
+        10.25,
         23.6
       ],
       "rot": 180,
@@ -692,7 +703,7 @@
     {
       "type": "bathtub",
       "pos": [
-        8.6,
+        14.1,
         23.5
       ],
       "rot": 180
@@ -700,7 +711,7 @@
     {
       "type": "toilet",
       "pos": [
-        7.1,
+        12.6,
         23.55
       ],
       "rot": 180
@@ -708,7 +719,7 @@
     {
       "type": "vanity",
       "pos": [
-        6.2,
+        11.7,
         23.65
       ],
       "rot": 180,
@@ -717,7 +728,7 @@
     {
       "type": "kitchen",
       "pos": [
-        1.6,
+        7.1,
         23.6
       ],
       "rot": 180,
@@ -727,12 +738,40 @@
   ],
   "lights": [
     {
-      "id": "estar.comedor",
-      "name": "Comedor",
+      "id": "cocina.mesada1",
+      "name": "Mesada 1",
+      "room": "cocina",
+      "type": "spots",
+      "pos": [
+        6.2,
+        1.65
+      ],
+      "capabilities": [
+        "brightness",
+        "temp"
+      ]
+    },
+    {
+      "id": "cocina.mesada2",
+      "name": "Mesada 2",
+      "room": "cocina",
+      "type": "spots",
+      "pos": [
+        6.2,
+        4.25
+      ],
+      "capabilities": [
+        "brightness",
+        "temp"
+      ]
+    },
+    {
+      "id": "estar.mesa1",
+      "name": "Mesa 1",
       "room": "estar",
       "type": "pendant",
       "pos": [
-        5.6,
+        10.4,
         2.1
       ],
       "y": 1.9,
@@ -742,227 +781,116 @@
       ]
     },
     {
-      "id": "estar.living",
-      "name": "Living",
+      "id": "estar.mesa2",
+      "name": "Mesa 2",
       "room": "estar",
-      "type": "spots",
+      "type": "pendant",
       "pos": [
-        5.9,
-        6.05
+        11.8,
+        2.1
       ],
+      "y": 1.9,
       "capabilities": [
         "brightness",
         "temp"
       ]
     },
     {
-      "id": "estar.tv",
-      "name": "Tira TV",
+      "id": "estar.ikea",
+      "name": "Ikea",
       "room": "estar",
-      "type": "strip",
+      "type": "table",
       "pos": [
-        6.2,
-        8.9
+        13.15,
+        4.45
       ],
-      "y": 0.4,
-      "length": 2.0,
+      "y": 0.55,
       "capabilities": [
         "brightness",
+        "temp",
         "color"
-      ],
-      "color": "#7b5cff"
+      ]
     },
     {
-      "id": "cocina.techo",
-      "name": "Cocina",
-      "room": "cocina",
-      "type": "spots",
+      "id": "hall.puerta",
+      "name": "Puerta",
+      "room": "hall",
+      "type": "ceiling",
       "pos": [
-        1.4,
-        3.05
+        6.3,
+        9.95
       ],
       "capabilities": [
         "brightness"
       ]
     },
     {
-      "id": "cocina.isla",
-      "name": "Isla",
-      "room": "cocina",
-      "type": "pendant",
-      "pos": [
-        2.4,
-        3.35
-      ],
-      "y": 1.8
-    },
-    {
-      "id": "hall.techo",
-      "name": "Entrada",
+      "id": "hall.avestruz",
+      "name": "Avestruz",
       "room": "hall",
-      "type": "ceiling",
+      "type": "floor",
       "pos": [
-        2.7,
-        10.5
+        10.5,
+        9.55
+      ],
+      "capabilities": [
+        "brightness"
       ]
     },
     {
-      "id": "pasillo.techo",
+      "id": "hall.pasillo",
       "name": "Pasillo",
-      "room": "pasillo",
+      "room": "hall",
       "type": "spots",
       "pos": [
-        3.05,
-        17.05
-      ]
-    },
-    {
-      "id": "bano1.techo",
-      "name": "Baño 1",
-      "room": "bano1",
-      "type": "ceiling",
-      "pos": [
-        1.2,
-        13.55
-      ]
-    },
-    {
-      "id": "bano2.techo",
-      "name": "Baño 2",
-      "room": "bano2",
-      "type": "ceiling",
-      "pos": [
-        1.2,
-        16.85
-      ]
-    },
-    {
-      "id": "dorm1.techo",
-      "name": "Dormitorio 1",
-      "room": "dorm1",
-      "type": "ceiling",
-      "pos": [
-        5.9,
-        13.55
+        8.55,
+        11.45
       ],
       "capabilities": [
-        "brightness",
-        "temp"
+        "brightness"
       ]
     },
     {
-      "id": "dorm2.techo",
-      "name": "Dormitorio 2",
-      "room": "dorm2",
-      "type": "ceiling",
-      "pos": [
-        5.9,
-        16.85
-      ],
-      "capabilities": [
-        "brightness",
-        "temp"
-      ]
-    },
-    {
-      "id": "estudio.techo",
-      "name": "Estudio",
-      "room": "estudio",
-      "type": "ceiling",
-      "pos": [
-        1.2,
-        20.35
-      ],
-      "capabilities": [
-        "brightness",
-        "temp"
-      ]
-    },
-    {
-      "id": "ppal.techo",
-      "name": "Dormitorio",
-      "room": "principal",
-      "type": "ceiling",
-      "pos": [
-        6.6,
-        20.35
-      ],
-      "capabilities": [
-        "brightness",
-        "temp"
-      ]
-    },
-    {
-      "id": "ppal.mesa",
-      "name": "Velador",
-      "room": "principal",
+      "id": "guardado.dispenser",
+      "name": "Dispenser agua",
+      "room": "guardado",
       "type": "table",
       "pos": [
-        6.75,
-        21.8
+        7.4,
+        7.55
       ],
-      "y": 0.55
+      "y": 0.9
     },
     {
-      "id": "banoppal.techo",
-      "name": "Baño ppal",
-      "room": "banoppal",
-      "type": "spots",
-      "pos": [
-        7.7,
-        23.05
-      ]
-    },
-    {
-      "id": "lavadero.techo",
-      "name": "Lavadero",
-      "room": "lavadero",
+      "id": "garage.luz",
+      "name": "Luz garage",
+      "room": "garage",
       "type": "ceiling",
       "pos": [
-        1.8,
-        23.05
+        2.75,
+        21.95
       ]
     }
   ],
   "acs": [
     {
       "id": "estar.ac",
-      "name": "Aire estar",
+      "name": "Aire living",
       "room": "estar",
       "wall": "south",
       "pos": [
-        3.9,
+        9.4,
         9.05
       ]
     },
     {
-      "id": "dorm1.ac",
-      "name": "Aire dorm. 1",
-      "room": "dorm1",
+      "id": "cocina.ac",
+      "name": "Aire cocina",
+      "room": "cocina",
       "wall": "north",
       "pos": [
-        5.9,
-        11.95
-      ]
-    },
-    {
-      "id": "dorm2.ac",
-      "name": "Aire dorm. 2",
-      "room": "dorm2",
-      "wall": "south",
-      "pos": [
-        5.9,
-        18.65
-      ]
-    },
-    {
-      "id": "ppal.ac",
-      "name": "Aire dorm. ppal",
-      "room": "principal",
-      "wall": "north",
-      "pos": [
-        6.6,
-        18.65
+        6.9,
+        0.0
       ]
     }
   ],
@@ -970,38 +898,74 @@
     {
       "id": "llegar",
       "name": "Llegar",
-      "icon": "home",
+      "icon": "door",
       "lights": {
-        "*": {
+        "cocina.mesada1": {
           "on": false
         },
-        "hall.techo": {
+        "cocina.mesada2": {
+          "on": false
+        },
+        "estar.mesa1": {
+          "on": false
+        },
+        "estar.mesa2": {
+          "on": false
+        },
+        "estar.ikea": {
+          "on": true,
+          "brightness": 0.7
+        },
+        "hall.puerta": {
           "on": true
         },
-        "estar.living": {
-          "on": true,
-          "brightness": 0.8
+        "hall.avestruz": {
+          "on": true
+        },
+        "hall.pasillo": {
+          "on": true
+        },
+        "garage.luz": {
+          "on": true
         }
       }
     },
     {
       "id": "cena",
       "name": "Cena",
-      "icon": "sofa",
+      "icon": "table",
       "lights": {
-        "*": {
-          "on": false
+        "cocina.mesada1": {
+          "on": true,
+          "brightness": 0.5
         },
-        "estar.comedor": {
+        "cocina.mesada2": {
+          "on": true,
+          "brightness": 0.5
+        },
+        "estar.mesa1": {
           "on": true,
           "brightness": 0.7
         },
-        "cocina.isla": {
-          "on": true
-        },
-        "estar.living": {
+        "estar.mesa2": {
           "on": true,
-          "brightness": 0.3
+          "brightness": 0.7
+        },
+        "estar.ikea": {
+          "on": true,
+          "brightness": 0.4
+        },
+        "hall.puerta": {
+          "on": false
+        },
+        "hall.avestruz": {
+          "on": false
+        },
+        "hall.pasillo": {
+          "on": false
+        },
+        "garage.luz": {
+          "on": false
         }
       }
     },
@@ -1010,17 +974,38 @@
       "name": "Película",
       "icon": "film",
       "lights": {
-        "*": {
+        "cocina.mesada1": {
           "on": false
         },
-        "estar.tv": {
+        "cocina.mesada2": {
+          "on": false
+        },
+        "estar.mesa1": {
+          "on": false
+        },
+        "estar.mesa2": {
+          "on": false
+        },
+        "estar.ikea": {
           "on": true,
-          "brightness": 0.9,
-          "color": "#6a4cff"
+          "brightness": 0.2
+        },
+        "hall.puerta": {
+          "on": false
+        },
+        "hall.avestruz": {
+          "on": false
+        },
+        "hall.pasillo": {
+          "on": false
+        },
+        "garage.luz": {
+          "on": false
         }
       },
       "acs": {
         "estar.ac": {
+          "on": true,
           "target": 23
         }
       }
@@ -1030,30 +1015,31 @@
       "name": "Noche",
       "icon": "moon",
       "lights": {
-        "*": {
+        "cocina.mesada1": {
           "on": false
         },
-        "pasillo.techo": {
-          "on": true,
-          "brightness": 0.1
-        }
-      },
-      "acs": {
-        "*": {
+        "cocina.mesada2": {
           "on": false
         },
-        "ppal.ac": {
-          "on": true,
-          "target": 24
-        }
-      }
-    },
-    {
-      "id": "apagar",
-      "name": "Todo apagado",
-      "icon": "power",
-      "lights": {
-        "*": {
+        "estar.mesa1": {
+          "on": false
+        },
+        "estar.mesa2": {
+          "on": false
+        },
+        "estar.ikea": {
+          "on": false
+        },
+        "hall.puerta": {
+          "on": false
+        },
+        "hall.avestruz": {
+          "on": false
+        },
+        "hall.pasillo": {
+          "on": false
+        },
+        "garage.luz": {
           "on": false
         }
       },

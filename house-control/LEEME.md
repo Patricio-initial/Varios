@@ -43,10 +43,23 @@ el lote junto (~41 m) el modelo no entra en la pantalla. Se usa uno a la vez.
    aires y muebles) → **Save & apply**. Se guarda en
    `~/Library/Application Support/HouseControl/plan.json`.
 
-**Qué hay que revisar:** las medidas de las habitaciones salen del plano; los nombres
-"Estudio" y "Lavadero" y todas las luces, aires y escenas son una suposición, para
-acomodar a lo que realmente hay instalado. Para cambiar medidas a mano, editar
-`generar-plano.py` y correr `python3 generar-plano.py`.
+**Dispositivos en el plano** (se vinculan en **Edit Home… → seleccionar la luz o el aire → Real device**):
+
+| En el plano | Dónde | Plataforma |
+| --- | --- | --- |
+| Mesada 1 y 2 | Cocina | Philips Hue (grupo "mesada") |
+| Mesa 1 y 2 | Comedor | Philips Hue (grupo "mesa") |
+| Ikea | Living (lámpara Symfonisk) | Philips Hue |
+| Puerta, Avestruz, Pasillo | Entrada | Smart Life |
+| Dispenser agua | Guardado / despensa | Smart Life (interruptor) |
+| Luz garage | Garage | Smart Life |
+| Aire living | Estar-comedor | "dining room air conditioner" |
+| Aire cocina | Cocina | Broadlink → necesita Home Assistant |
+| Extractor | Quincho (`quincho-taller.json`) | Broadlink → necesita Home Assistant |
+
+House Control solo maneja luces, enchufes y aires: las cerraduras, el alimentador del gato,
+el sensor de temperatura del quincho y el enchufe del estanque no aparecen.
+Las posiciones de las luces dentro de cada ambiente son aproximadas: se arrastran en el editor.
 
 ## Ver qué hay conectado en la red
 
