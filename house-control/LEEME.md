@@ -53,7 +53,7 @@ el lote junto (~41 m) el modelo no entra en la pantalla. Se usa uno a la vez.
 | Puerta, Avestruz, Pasillo | Entrada | Smart Life |
 | Dispenser agua | Guardado / despensa | Smart Life (interruptor) |
 | Luz garage | Garage | Smart Life |
-| Aire living | Estar-comedor | Google Home ("dining room air conditioner") → ver la app de la marca |
+| Aire living | Estar-comedor | Boldr Klima (hoy vía Google Home) → por Matter a Home Assistant o Apple Home |
 | Aire cocina | Cocina | Broadlink → necesita Home Assistant |
 | Extractor | Quincho (`quincho-taller.json`) | Broadlink → necesita Home Assistant |
 | Arturito (calentador) | Taller (`quincho-taller.json`) | Smart Life (interruptor) |
